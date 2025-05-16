@@ -124,17 +124,15 @@ body{
     color: oklch(20.8% 0.042 265.755);
     width: 100%;
     align-items: center;
-    border: 1px solid red;
     line-height: 20%;
 }
 
 #tec-itens{
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: start;
     gap: 15px;
-    border: 1px solid green;
     margin: 5px;
     height: 80%;
 }
@@ -142,17 +140,16 @@ body{
     font-size: 70px;
 }
 #tec-tittle{
+    padding-left: 10px;
     margin: 10px;
     font-family: 'Rubik';
     width: 100%;
     color: oklch(20.8% 0.042 265.755);
 }
 #tec-cards{
-    padding: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid blue;
     width: 30%;
 }
