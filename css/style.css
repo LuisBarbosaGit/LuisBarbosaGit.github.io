@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: oklch(98.5% 0.001 106.423);
+}
+
+/* Estilização do Head */
+
+#head{
+    height: 20dvh;
+}
+#head_user{
+    display: flex;
+    justify-content: space-around;
+    gap: 60%;
+    height: 50px;
+    align-items: center; 
+    padding-top: 20px;
+    margin-bottom: 40px;
+     
+}
+#button-ola{
+    display: flex;
+    align-items: center;
+}
+
+#head_button{
+    width: 130px;
+    height: 50px;
+    border: 3px solid oklch(51.8% 0.253 323.949);
+    border-radius: 30px;
+    color: oklch(51.8% 0.253 323.949);
+    background-color: white;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 40px;
+}
+#head_button:hover{
+    cursor: pointer;
+    border: 3px solid oklch(74% 0.238 322.16);
+    color: oklch(74% 0.238 322.16);
+}
+
+#head_icon i{
+    font-size: 2.9em;
+    color: rgb(0, 0, 0);
+    
+}
+
+#head_icon i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+#icon-text{
+    font-size: 0.4em;
+    font-family: 'Raleway';
+}
+
+/* Estilização do Main */
+#title{
+    opacity: 0;
+    margin: 0px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 80dvh;
+    transform: translateY(70px);
+    transition: opacity 0.7s ease-in, transform 2.1s ease-in-out;  
+}
+#title.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#main-title{
+    font-family: 'Rubik';
+    font-size: 4.1em;
+    font-weight: 600;
+    color: oklch(20.8% 0.042 265.755);
+}
+
+#CargoSpan{
+    background: linear-gradient(90deg, oklch(66.7% 0.295 322.15), oklch(43.2% 0.232 292.759));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#description{
+    font-family: 'Raleway';
+    margin: 5px;
+    font-size: 1.6em;
+    color: oklch(44.6% 0.03 256.802);
+}
+
+#user-image img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 1px solid  black
+}
+
+/* Tecnologias Utilizadas */
+#tec-container{
+    width: 80%;
+    min-height: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#main-tec-tittle{
+    font-family: 'Rubik';
+    display: flex;
+    font-size: 3.7em;
+    color: oklch(20.8% 0.042 265.755);
+    width: 100%;
+    align-items: center;
+    border: 1px solid red;
+    line-height: 20%;
+}
+
+#tec-itens{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px;
+    border: 1px solid green;
+    margin: 5px;
+    height: 80%;
+}
+#tec-itens i {
+    font-size: 70px;
+}
+#tec-tittle{
+    margin: 10px;
+    font-family: 'Rubik';
+    width: 100%;
+    color: oklch(20.8% 0.042 265.755);
+}
+#tec-cards{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid blue;
+    width: 30%;
+}
