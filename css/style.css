@@ -7,7 +7,6 @@ body{
 }
 
 /* Estilização do Head */
-
 #head{
     height: 20dvh;
 }
@@ -48,6 +47,12 @@ body{
     color: rgb(0, 0, 0);
     
 }
+#head_icon a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre ícone e texto */
+    text-decoration: none;
+  }
 
 #head_icon i:hover{
     cursor: pointer;
@@ -56,8 +61,11 @@ body{
 }
 
 #icon-text{
-    font-size: 0.4em;
+    font-size: 1em;
+    text-align: end;
     font-family: 'Raleway';
+    line-height: 1;
+    color: rgb(0, 0, 0);
 }
 
 /* Estilização do Main */
@@ -167,6 +175,48 @@ body{
 
 /* Para dispositivos mobile */
 
-@media screen {
-    
+@media (max-width: 500px) {
+    #head{
+        width: 100vw;
+        height: 12vh;
+        margin-bottom: 10px;
+    }
+    #head_user{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        gap: 5px;
+        
+    }
+    #head_button{
+        width: 90px;
+        height: 50px;
+        font-size: 1.1em;
+        text-align: center;
+        line-height: 10px;
+    }
+    #head_icon i{
+        font-size: 1.9em;
+        color: rgb(0, 0, 0); 
+    }
+    #title{
+        width: 95vw;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+        
+        height: 90dvh;
+    }
+    #main-title{
+        text-align: center;
+        font-size: 2em;
+    }
+    #description{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    #user-image img{
+        width: 90px;
+        height: 90px;
+    }
 }
