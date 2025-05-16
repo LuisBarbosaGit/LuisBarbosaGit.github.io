@@ -1,10 +1,10 @@
 const observer = new IntersectionObserver((items, observer) => {
-  items.forEach(item => {
+  items.forEach((item, index) => {
     if (item.isIntersecting) {
       setTimeout(() => {
         item.target.classList.add('show');
         observer.unobserve(item.target); // para parar de observar após aparecer
-      }, 200);
+      }, index * 1000);
     }
   });
 },  {
@@ -18,18 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const containt = document.querySelectorAll('#tec-cards');
+    setTimeout(() => {
       showItem(containt)
+    }, 400);
 })
 
 //Função para enviar cada um dos cards com um intervalo de tempo entre si
 function showItem(container) {
   let i = 1
-  container.forEach((item =>{
-    setTimeout(() => {
-      observer.observe(item)
-      
-    }, i  * 1800);
-    i++
-    }))   
+  container.forEach((item, index) =>{
+    observer.observe(item)
+    
+    })   
   }
+
+function message() {
+  document.addEventListener('click', () =>{
+    window.location.href = "https://w.app/luisbarbosa"
+  })
+}
 
