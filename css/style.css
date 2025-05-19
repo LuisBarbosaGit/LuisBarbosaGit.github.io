@@ -112,10 +112,28 @@ body{
     border: 1px solid  black
 }
 
+#scroll{
+    width: 9%;
+    height: 10%;
+    border: none;
+    border-radius: 20px;
+    color: oklch(62.7% 0.295 322.15);
+    font-size: 4.5em;
+    margin-top: 20px;
+    background-color: white;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+#scroll:hover{
+    color: oklch(51.8% 0.253 323.949);
+    transform: translateY(0);
+    cursor: pointer;
+}
+
 /* Tecnologias Utilizadas */
 #tec-container{
     width: 90dvw;
-    min-height: 400px;
+    min-height: 500px;
     padding: 10px;
     margin: 10px auto;
     display: flex;
@@ -125,14 +143,16 @@ body{
 }
 
 #main-tec-tittle{
-    font-family: 'Rubik';
+    font-family: 'Raleway';
     display: flex;
-    font-size: 3.5em;
-    color: oklch(20.8% 0.042 265.755);
+    font-size: 3.3em;
+    color: #020617;
     width: 100%;
     justify-content: center;
     align-items: center;
     line-height: 20%;
+    margin-top: 15px;
+    text-transform: uppercase;
 }
 
 #tec-itens{
@@ -150,7 +170,7 @@ body{
 #tec-tittle{
     padding-left: 10px;
     margin: 10px;
-    font-family: 'Rubik';
+    font-family: 'Raleway';
     width: 100%;
     color: oklch(20.8% 0.042 265.755);
 }
@@ -185,9 +205,9 @@ body{
 #redes-sociais h2{
     text-align: center;
     width: 100%;
-    font-family: 'Libre Baskerville';
+    font-family: 'Raleway';
     font-size: 2.2em;
-    color: #1e293b;
+    color: #020617;
 }
 #direitos{
     text-align: center;

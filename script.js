@@ -38,3 +38,11 @@ function message() {
   })
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('scroll').addEventListener('click', () => {
+    const container = document.getElementById('tec-container');
+    if (container) {
+      container.scrollIntoView({behavior: "smooth"})
+    }
+  })
+})
