@@ -120,7 +120,7 @@ body{
     color: oklch(62.7% 0.295 322.15);
     font-size: 4.5em;
     margin-top: 20px;
-    background-color: white;
+    background-color: oklch(98.5% 0.001 106.423);
     transform: translateY(10px);
     transition: all 0.3s ease-in-out;
 }
