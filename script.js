@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const containt = document.querySelectorAll('#tec-cards');
-    setTimeout(() => {
-      showItem(containt)
-    }, 400);
+    showItem(containt)
 })
 
 //Função para enviar cada um dos cards com um intervalo de tempo entre si
 function showItem(container) {
   let i = 1
-  container.forEach((item, index) =>{
-    observer.observe(item)
-    
-    })   
+  setTimeout(() => {
+    container.forEach((item, index) =>{
+      observer.observe(item)
+      
+      })   
+  }, 400);
   }
 
 function message() {
@@ -40,9 +40,11 @@ function message() {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('scroll').addEventListener('click', () => {
-    const container = document.getElementById('tec-container');
+    const container = document.getElementById('main-tec-tittle');
     if (container) {
-      container.scrollIntoView({behavior: "smooth"})
+      setTimeout(() => {
+        container.scrollIntoView({behavior: "smooth"})
+      }, 100);
     }
   })
 })

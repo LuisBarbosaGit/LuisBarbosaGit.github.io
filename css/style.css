@@ -139,13 +139,14 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1.2rem;
      
 }
 
 #main-tec-tittle{
     font-family: 'Raleway';
     display: flex;
-    font-size: 3.3em;
+    font-size: clamp(2.3rem, 8vw, 4.5rem);
     color: #020617;
     width: 100%;
     justify-content: center;
@@ -167,12 +168,21 @@ body{
 #tec-itens i {
     font-size: 70px;
 }
+
+#tec-itens img{
+    width: 6rem;
+    height: 4.5rem;
+    margin: 0;
+    padding: 0;
+}
+
 #tec-tittle{
     padding-left: 10px;
     margin: 10px;
     font-family: 'Raleway';
     width: 100%;
     color: oklch(20.8% 0.042 265.755);
+    font-size: clamp(1.6rem, 5vw, 3rem);
 }
 
 #tec-cards{
@@ -209,14 +219,6 @@ body{
     font-size: 2.2em;
     color: #020617;
 }
-#direitos{
-    text-align: center;
-    font-family: 'Libre Baskerville';
-    font-size: 1.2em;
-    color: #1e293b;
-    margin-top: 15px;
-    
-}
 #redes{
     text-decoration: none;
     font-size: 3em;
@@ -232,9 +234,18 @@ body{
     transform: scale(1.1);
 }
 
+#direitos{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 1.2em;
+    color: #1e293b;
+    margin: 15px;
+    
+}
+
 /* Para dispositivos mobile */
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     #head{
         width: 100vw;
         height: 12vh;
@@ -242,7 +253,7 @@ body{
     }
     #head_user{
         height: 10vh;
-        width: 100vw;
+        width: 90vw;
         display: flex;
         gap: 5px;
         
@@ -259,12 +270,15 @@ body{
         color: rgb(0, 0, 0); 
     }
     #title{
-        width: 95vw;
+        width: 90vw;
         align-items: center;
         margin: 0 auto;
         padding: 10px;
-        
+        font-size: 1.4rem;
         height: 90dvh;
+    }
+    #scroll{
+        font-size: 4.4rem;
     }
     #main-title{
         text-align: center;
@@ -277,5 +291,25 @@ body{
     #user-image img{
         width: 90px;
         height: 90px;
+    }
+
+    /* Skills */
+
+    #tec-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    #tec-cards{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #tec-tittle{
+        text-align: center;
+    }
+
+    /* Direitos */
+    #direitos{
+        font-size: 0.9rem;
     }
 }
